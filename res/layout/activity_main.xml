@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:layout_margin="20dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/num_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始60秒倒计时" />
+    
+    
+    <EditText 
+        android:id="@+id/num_syst_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="重新输入倒计时数字"
+         android:layout_below="@id/num_down"
+         android:phoneNumber="true"
+        android:layout_marginTop="30dp"
+        />
+    
+    <Button 
+        android:id="@+id/button_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num_down"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/num_syst_again"
+        android:text="重新选定数值"
+        
+        />
+
+</RelativeLayout>
